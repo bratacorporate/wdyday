@@ -1,0 +1,83 @@
+:root {
+   /* color */
+   --primary: #1e1e1e;
+   --basic: #F9F7E4;
+   --layer-1: #EBBE83;
+   --layer-2: #4E291A;
+   --layer-3: #A7653A;
+   --layer-4: #784F31;
+}
+
+/* smartphone preview */
+@media screen and (max-width: 600px) {
+   /* Jumbotron */
+   .jumbotron {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+   }
+
+   .jumbotron .row .col:last-child .message {
+      padding: 1em;
+   }
+
+   .jumbotron .row .col:last-child .message p {
+      font-size: .8em;
+   }
+
+   .jumbotron .row .col:last-child .message p.first-child.typing {
+      white-space: normal;
+   }
+   /* end jumbotron */
+
+   /* describe */
+   .describe .row .col:first-child {
+      display: none;
+   }
+
+   .describe .row .col:last-child {
+      align-items: flex-end;
+   }
+   .describe .row .col:last-child span {
+      opacity: 1;
+      color: var(--basic);
+   }
+   
+   .describe .outline {
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 2px var(--basic);
+   }
+
+   .desc .col:last-child {
+      padding: 2em;
+      text-align: justify;
+      background-color: var(--primary);
+      color: var(--basic);
+      transform: translateY(-100px);
+      border-radius: 2em;
+   }
+
+   .desc .col:last-child a {
+      color: var(--basic) !important;
+   }
+   /* end desc */
+
+   /* footer */
+   
+   footer .row {
+      justify-content: center;
+   }
+   
+   footer .row .col {
+      margin: 1em 0;
+   }
+
+   footer .row .col:last-child {
+      margin-top: 2em;
+   }
+   
+
+
+
+
+}
